@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    font-family: $font-logo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &__one {
+        color: $logo-one-color;
+    }
+    &__two {
+        color: $logo-two-color;
+    }
+
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+
+.logo__two--inverse {
+    color: $logo-two-invert-color;
+}

@@ -1,0 +1,131 @@
+
+body {
+    font-family: $font-main;
+    background-color: $background-main-color;
+    // color: $text-main-color;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+//@extend .section;
+.section {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+//@extend .button;
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+    border: 0;
+    border-radius: 4px;
+}
+
+//@extend .buttonHoverFocus;
+.buttonHoverFocus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+//@extend .text-h2;
+.text-h2 {
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
+}
+
+//@extend .text-h3;
+.text-h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+//@extend .text;
+.text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color;
+}
+
+//@extend .link;
+.link {
+    // color: $text-main-color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $active-main-color;
+    }
+}
+
+//@include margin-right-between-elements();
+@mixin margin-right-between-elements($size) {
+    &:not(:last-child) {
+        margin-right: $size;
+    }
+}
+
+//@include margin-bottom-between-elements();
+@mixin margin-bottom-between-elements($size) {
+    &:not(:last-child) {
+        margin-bottom: $size;
+    }
+}

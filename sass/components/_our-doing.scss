@@ -1,0 +1,42 @@
+// text-h2 our-doing__title
+// text-h3 our-doing__text
+.our-doing {
+    @extend .section;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.our-doing__title {
+    @extend .text-h2;
+}
+
+.our-doing__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.our-doing__item {
+    position: relative;
+    max-width: 370px;
+    @include margin-right-between-elements(30px);
+}
+
+.our-doing__text {
+    @extend .text-h3;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $text-invert-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+
+
+
