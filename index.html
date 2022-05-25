@@ -213,9 +213,9 @@
                                 ./images/our-worker-i-tab@2x.jpg  708w,
                                 ./images/our-worker-i-mob@2x.jpg  900w
                                 " 
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                             src="./images/our-worker-i-mob.jpg"
-                            alt="на фото Игорь" width="100%"
+                            alt="на фото Игорь"
                         />
                         <div class="our-team__group">
                             <h3 class="our-team__person">Игорь Демьяненко</h3>
@@ -261,9 +261,9 @@
                                 ./images/our-worker-o-tab@2x.jpg  708w,
                                 ./images/our-worker-o-mob@2x.jpg  900w
                                 " 
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                             src="./images/our-worker-o-mob.jpg"
-                            alt="на фото Ольга" width="100%"
+                            alt="на фото Ольга"
                         />
                         <div class="our-team__group">
                             <h3 class="our-team__person">Ольга Репина</h3>
@@ -309,9 +309,9 @@
                                 ./images/our-worker-n-tab@2x.jpg  708w,
                                 ./images/our-worker-n-mob@2x.jpg  900w
                                 " 
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                             src="./images/our-worker-n-mob.jpg"
-                            alt="на фото Николай" width="100%"
+                            alt="на фото Николай"
                         />
                         <div class="our-team__group">
                             <h3 class="our-team__person">Николай Тарасов</h3>
@@ -357,9 +357,9 @@
                                 ./images/our-worker-m-tab@2x.jpg  708w,
                                 ./images/our-worker-m-mob@2x.jpg  900w
                                 " 
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                             src="./images/our-worker-m-mob.jpg"
-                            alt="на фото Михаил" width="100%"
+                            alt="на фото Михаил"
                         />
                         <div class="our-team__group">
                             <h3 class="our-team__person">Михаил Ермаков</h3>
@@ -515,42 +515,44 @@
             </div>
         </div>
     </footer>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle menu-toggle--close js-close-menu" type="button">
-            <svg width="40" height="40">
-                <use href="./images/icons.svg#icon-close-40px"></use>
-            </svg>
-        </button>
-        <ul class="menu-container__list">
-            <li class="menu-container__item">
-                <a class="menu-container__link menu-container__link--current" href="./index.html">
-                    Студия
-                </a>
-            </li>
-            <li class="menu-container__item">
-                <a class="menu-container__link" href="./portfolio.html">
-                    Портфолио
-                </a>
-            </li>
-            <li class="menu-container__item">
-                <a class="menu-container__link" href="">
-                    Контакты
-                </a>
-            </li>
-        </ul>
-        <div class="menu-container__info">
-            <a class="menu-container__tel" href="tel:+380961111111">
-                +38 096 111 11 11
-            </a>
-            <a class="menu-container__mail" href="mailto:info@devstudio.com">
-                info@devstudio.com
-            </a>
-            <ul class="menu-social">
-                <li class="menu-social__item"><a class="menu-social__link" href="">Instagram</a></li>
-                <li class="menu-social__item"><a class="menu-social__link" href="">Twitter</a></li>
-                <li class="menu-social__item"><a class="menu-social__link" href="">Facebook</a></li>
-                <li class="menu-social__item"><a class="menu-social__link" href="">LinkedIn</a></li>
+    <div class="container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle menu-toggle--close js-close-menu" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-40px"></use>
+                </svg>
+            </button>
+            <ul class="menu-container__list">
+                <li class="menu-container__item">
+                    <a class="menu-container__link menu-container__link--current" href="./index.html">
+                        Студия
+                    </a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="./portfolio.html">
+                        Портфолио
+                    </a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="">
+                        Контакты
+                    </a>
+                </li>
             </ul>
+            <div class="menu-container__info">
+                <a class="menu-container__tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+                <a class="menu-container__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+                <ul class="menu-social">
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Instagram</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Twitter</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Facebook</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>

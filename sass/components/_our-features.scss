@@ -49,6 +49,10 @@
     @extend .text-h3;
     margin-top: 30px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .our-features__text {
